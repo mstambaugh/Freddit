@@ -1,23 +1,43 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
+import PostFeed from './PostFeed';
 
+const TrendingCardStyles = {
+  borderRadius: '8%'
+},
 
-function TicketList(props) {
-  console.log(props.ticketList);
+function HomePage() {
   return (
     <div>
-      <hr />
-      {props.ticketList.map((ticket) =>
-        <Ticket names={ticket.names}
-          location={ticket.location}
-          issue={ticket.issue}
-          key={ticket.id} />
-      )}
-    </div>
+      <div className='row'> 
+        <div className='col l3 m3'>
+          <div className='card' style = {TrendingCardStyles}>
+          </div>
+        </div>
+        <div className='col l3 m3'>
+          <div className='card' style = {TrendingCardStyles}>
+          </div>
+        </div>
+        <div className='col l3 m3'>
+          <div className='card' style = {TrendingCardStyles}>
+          </div>
+        </div>
+        <div className='col l3 m3'>
+          <div className='card' style = {TrendingCardStyles}>
+          </div>
+        </div>
+      </div>
+        <div className='row'>
+          <div classname='col l8 m8'>
+            <div className='card'>
+            </div> 
+            <div className='card'>
+              <PostFeed />
+            </div> 
+          </div>
+        </div>
+    </div>      
+    
   );
 }
-TicketList.propTypes = {
-  ticketList: PropTypes.array
-};
-
-export default TicketList;
+export default HomePage;

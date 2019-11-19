@@ -1,16 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
-function Header() {
+function Navbar() {
   return (
     <div>
-      <h1>Help Queue</h1>
-      <div>
-       
+      <h1>Reddit</h1>
+      <div>    
       </div>
     </div>
   );
 }
 
-export default Header;
+export default Navbar;
