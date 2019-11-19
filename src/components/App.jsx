@@ -14,11 +14,12 @@ class App extends React.Component {
     };
     this.handleAddingNewPostToFeed = this.handleAddingNewPostToFeed.bind(this);
   }
-  handleAddingNewPostToFeed(newPost){
-    var newMasterPostFeed = this.state.masterPostFeed.slice();
-    newMasterPostFeed.push(newPost);
-    this.setState({masterPostList: newMasterPostList});
-  }
+  // handleAddingNewPostToFeed(newPost){
+  //   var newMasterPostFeed = this.state.masterPostFeed.slice();
+  //   newMasterPostFeed.push(newPost);
+  //   this.setState({masterPostList: newMasterPostList});
+  // }
+
   render() {
     return (
       <div>

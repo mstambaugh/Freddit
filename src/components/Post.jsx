@@ -13,15 +13,15 @@ function Post(props) {
   return (
     <div className='row'>
       <div className='col l8 m5'>
-          <div className='card' style = {PostStyles}>
-            <h3>{props.sub} - {props.user}</h3>
-            <h2>{props.text}</h2>
-            <div style={PostImageStyles}>{props.image}
-            </div>
-            <hr/>
+        <div className='card' style = {PostStyles}>
+          <h3>{props.sub} - {props.user}</h3>
+          <h2>{props.text}</h2>
+          <div style={PostImageStyles}>{props.image}
           </div>
+          <hr/>
         </div>
       </div>
+    </div>
   );
 }
 Post.propTypes = {
