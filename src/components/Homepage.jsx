@@ -1,16 +1,14 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-import PostFeed from './PostFeed';
+import PropTypes from 'prop-types';
+// import PostFeed from './PostFeed';
 
-
-
+const TrendingCardStyles = {
+  borderRadius: '8%'
+};
 
 class HomePage extends React.Component {
   render() {
 
-    var TrendingCardStyles = {
-      borderRadius: '8%'
-    };
 
     return (
       <div>
@@ -37,7 +35,7 @@ class HomePage extends React.Component {
             <div className='card'>
             </div>
             <div className='card'>
-              <PostFeed />
+             (this.props)
             </div>
           </div>
         </div>
